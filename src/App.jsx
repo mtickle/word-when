@@ -1,122 +1,94 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import emotionData from '@data/data.json';
+import { useState } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function EmotionApp() {
+  const [selectedCore, setSelectedCore] = useState(null);
+  const [selectedFeeling, setSelectedFeeling] = useState(null);
+
+  const reset = () => {
+    setSelectedCore(null);
+    setSelectedFeeling(null);
+  };
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <div className="min-h-screen bg-slate-50 flex flex-col items-center p-6 font-sans">
+      <div className="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden mt-10">
+        
+        {/* Header - Removed the top left reset button */}
+        <div className="bg-slate-800 p-6 text-center text-white relative">
+          <h1 className="text-2xl font-bold tracking-wide">Word When</h1>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
 
-      <div className="ticks"></div>
+        <div className="p-6">
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
+          {/* View 1: Select Core Emotion */}
+          {!selectedCore && (
+            <div className="grid grid-cols-2 gap-4">
+              {emotionData.emotions.map((emotion) => (
+                <button
+                  key={emotion.core}
+                  onClick={() => setSelectedCore(emotion)}
+                  className={`${emotion.color} text-white py-8 rounded-xl font-bold text-xl shadow-sm hover:opacity-90 transition-opacity uppercase`}
                 >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+                  {emotion.core}
+                </button>
+              ))}
+            </div>
+          )}
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+
+          {/* View 2: Select Specific Feeling */}
+          {selectedCore && !selectedFeeling && (
+            <div className="animate-fade-in">
+              <h2 className="text-lg text-white-600 mb-4 text-center">
+                I am feeling <span className={`font-bold ${selectedCore.color.replace('bg-', 'text-')}`}>{selectedCore.core}</span> because I am...
+              </h2>
+              <div className="grid grid-cols-2 gap-3">
+                {selectedCore.feelings.map((feeling) => (
+                 <button
+  key={feeling.name}
+  onClick={() => setSelectedFeeling(feeling)}
+  className={`${selectedCore.color} text-white tracking-wide uppercase border-2 border-transparent hover:border-slate-200 py-4 rounded-lg font-semibold shadow-sm hover:opacity-90 transition-all`}
+>
+  {feeling.name}
+</button>
+                ))}
+                
+                {/* New Start Over Button: Spans 2 columns, muted colors */}
+                <button 
+                  onClick={reset}
+                  className="col-span-2 mt-2 bg-slate-100 hover:bg-slate-200 text-slate-500 py-3 rounded-lg font-medium transition-colors"
+                >
+                  Start Over
+                </button>
+              </div>
+            </div>
+          )}
+
+
+
+          {/* View 3: The Verse */}
+          {selectedFeeling && (
+            <div className="animate-fade-in text-center py-8">
+              <div className="mb-6 inline-block p-4 rounded-full bg-slate-100">
+                <span className="text-3xl">📖</span>
+              </div>
+              <h3 className="text-2xl font-bold text-white-800 mb-2">
+                {selectedFeeling.reference}
+              </h3>
+              <p className="text-white-600 italic mb-8 px-4 text-lg">
+                "{selectedFeeling.text}"
+              </p>
+              <button 
+                onClick={reset}
+                className={`${selectedCore.color} text-white px-8 py-3 rounded-full font-bold shadow-md hover:shadow-lg transition-all`}
+              >
+                Done
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
 }
-
-export default App
