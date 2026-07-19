@@ -2,74 +2,74 @@
   "emotions": [
     {
       "core": "MAD",
-      "color": "bg-red-500",
+      "color": "bg-pink-500",
       "feelings": [
-        { "name": "Hurt", "reference": "Mark 11:25", "text": "And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses." },
-        { "name": "Hateful", "reference": "1 John 4:19-20", "text": "We love because he first loved us. If anyone says, 'I love God,' and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen." },
-        { "name": "Critical", "reference": "Ephesians 4:29", "text": "Let no corrupting talk come out of your mouths, but only such as is good for building up, as fits the occasion, that it may give grace to those who hear." },
-        { "name": "Frustrated", "reference": "John 16:33", "text": "I have said these things to you, that in me you may have peace. In the world you will have tribulation. But take heart; I have overcome the world." },
-        { "name": "Annoyed", "reference": "Psalm 37:8-9", "text": "Refrain from anger, and forsake wrath! Fret not yourself; it tends only to evil. For the evildoers shall be cut off, but those who wait for the LORD shall inherit the land." },
-        { "name": "Jealous", "reference": "1 Corinthians 13:4-5", "text": "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful." }
+        { "name": "Hurt", "reference": "Psalm 147:3", "text": "He heals the brokenhearted and binds up their wounds." },
+        { "name": "Hateful", "reference": "Proverbs 10:12", "text": "Hatred stirs up strife, but love covers all offenses." },
+        { "name": "Critical", "reference": "Matthew 7:3", "text": "Why do you see the speck that is in your brother's eye, but do not notice the log that is in your own eye?" },
+        { "name": "Frustrated", "reference": "Galatians 6:9", "text": "And let us not grow weary of doing good, for in due season we will reap, if we do not give up." },
+        { "name": "Annoyed", "reference": "Proverbs 29:11", "text": "A fool gives full vent to his spirit, but a wise man quietly holds it back." },
+        { "name": "Jealous", "reference": "James 3:16", "text": "For where jealousy and selfish ambition exist, there will be disorder and every vile practice." }
       ]
     },
     {
       "core": "STRONG",
-      "color": "bg-orange-500",
+      "color": "bg-blue-500",
       "feelings": [
-        { "name": "Respected", "reference": "Titus 2:7", "text": "Show yourself in all respects to be a model of good works, and in your teaching show integrity, dignity." },
-        { "name": "Confident", "reference": "Romans 8:28", "text": "And we know that for those who love God all things work together for good, for those who are called according to his purpose." },
-        { "name": "Worthy", "reference": "Ephesians 2:10", "text": "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them." },
-        { "name": "Proud", "reference": "2 Timothy 4:7", "text": "I have fought the good fight, I have finished the race, I have kept the faith." },
-        { "name": "Valuable", "reference": "Galatians 3:26", "text": "For in Christ Jesus you are all sons of God, through faith." },
-        { "name": "Important", "reference": "Isaiah 43:4", "text": "Because you are precious in my eyes, and honored, and I love you, I give men in return for you, peoples in exchange for your life." }
+        { "name": "Respected", "reference": "Proverbs 22:1", "text": "A good name is to be chosen rather than great riches, and favor is better than silver or gold." },
+        { "name": "Confident", "reference": "Hebrews 10:35", "text": "Therefore do not throw away your confidence, which has a great reward." },
+        { "name": "Worthy", "reference": "Zephaniah 3:17", "text": "The Lord your God is in your midst, a mighty one who will save; he will rejoice over you with gladness." },
+        { "name": "Proud", "reference": "Jeremiah 9:23-24", "text": "Let not the mighty man boast in his might, but let him who boasts boast in this, that he understands and knows me." },
+        { "name": "Valuable", "reference": "Matthew 10:31", "text": "Fear not, therefore; you are of more value than many sparrows." },
+        { "name": "Important", "reference": "1 Peter 2:9", "text": "But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession." }
       ]
     },
     {
       "core": "CALM",
-      "color": "bg-teal-500",
+      "color": "bg-emerald-500",
       "feelings": [
-        { "name": "Loving", "reference": "John 13:34-35", "text": "A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another." },
-        { "name": "Trusting", "reference": "Proverbs 3:5-6", "text": "Trust in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths." },
-        { "name": "Peaceful", "reference": "Matthew 5:9", "text": "Blessed are the peacemakers, for they shall be called sons of God." },
-        { "name": "Thoughtful", "reference": "Colossians 3:2", "text": "Set your minds on things that are above, not on things that are on earth." },
-        { "name": "Satisfied", "reference": "John 4:13-14", "text": "Jesus said to her, 'Everyone who drinks of this water will be thirsty again, but whoever drinks of the water that I will give him will never be thirsty again. The water that I will give him will become in him a spring of water welling up to eternal life.'" },
-        { "name": "Grateful", "reference": "1 Thessalonians 5:18", "text": "Give thanks in all circumstances; for this is the will of God in Christ Jesus for you." }
+        { "name": "Loving", "reference": "1 John 4:7", "text": "Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God." },
+        { "name": "Trusting", "reference": "Isaiah 26:3", "text": "You keep him in perfect peace whose mind is stayed on you, because he trusts in you." },
+        { "name": "Peaceful", "reference": "John 14:27", "text": "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you." },
+        { "name": "Thoughtful", "reference": "Philippians 4:8", "text": "Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, think about these things." },
+        { "name": "Satisfied", "reference": "Psalm 107:9", "text": "For he satisfies the longing soul, and the hungry soul he fills with good things." },
+        { "name": "Grateful", "reference": "Colossians 3:15", "text": "And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful." }
       ]
     },
     {
       "core": "HAPPY",
-      "color": "bg-green-500",
+      "color": "bg-yellow-500",
       "feelings": [
-        { "name": "Excited", "reference": "Psalm 150:6", "text": "Let everything that has breath praise the LORD! Praise the LORD!" },
-        { "name": "Hopeful", "reference": "Romans 8:24-25", "text": "For in this hope we were saved. Now hope that is seen is not hope. For who hopes for what he sees? But if we hope for what we do not see, we wait for it with patience." },
-        { "name": "Energetic", "reference": "Matthew 6:33", "text": "But seek first the kingdom of God and his righteousness, and all these things will be added to you." },
-        { "name": "Inspired", "reference": "John 16:13", "text": "When the Spirit of truth comes, he will guide you into all the truth, for he will not speak on his own authority, but whatever he hears he will speak, and he will declare to you the things that are to come." },
-        { "name": "Cheerful", "reference": "Proverbs 17:22", "text": "A joyful heart is good medicine, but a crushed spirit dries up the bones." },
-        { "name": "Creative", "reference": "Exodus 35:31", "text": "And he has filled him with the Spirit of God, with skill, with intelligence, with knowledge, and with all craftsmanship." }
+        { "name": "Excited", "reference": "Psalm 118:24", "text": "This is the day that the LORD has made; let us rejoice and be glad in it." },
+        { "name": "Hopeful", "reference": "Jeremiah 29:11", "text": "For I know the plans I have for you, declares the LORD, plans for welfare and not for evil, to give you a future and a hope." },
+        { "name": "Energetic", "reference": "Isaiah 40:31", "text": "But they who wait for the Lord shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint." },
+        { "name": "Inspired", "reference": "Ephesians 2:10", "text": "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them." },
+        { "name": "Cheerful", "reference": "Proverbs 15:13", "text": "A glad heart makes a cheerful face, but by sorrow of heart the spirit is crushed." },
+        { "name": "Creative", "reference": "Genesis 1:27", "text": "So God created man in his own image, in the image of God he created him; male and female he created them." }
       ]
     },
     {
       "core": "SAD",
-      "color": "bg-blue-500",
+      "color": "bg-purple-500",
       "feelings": [
-        { "name": "Depressed", "reference": "Psalms 34:17-18", "text": "When the righteous cry for help, the LORD hears and delivers them out of all their troubles. The LORD is near to the brokenhearted and saves the crushed in spirit." },
-        { "name": "Lonely", "reference": "Isaiah 41:10", "text": "Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand." },
-        { "name": "Ashamed", "reference": "Matthew 5:14-16", "text": "You are the light of the world. A city set on a hill cannot be hidden... In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven." },
-        { "name": "Guilty", "reference": "Romans 3:23-24", "text": "For all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus." },
-        { "name": "Bored", "reference": "Colossians 3:23-24", "text": "Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ." },
-        { "name": "Tired", "reference": "Matthew 11:28", "text": "Come to me, all who labor and are heavy laden, and I will give you rest." }
+        { "name": "Depressed", "reference": "Psalm 42:11", "text": "Why are you cast down, O my soul, and why are you in turmoil within me? Hope in God; for I shall again praise him, my salvation and my God." },
+        { "name": "Lonely", "reference": "Deuteronomy 31:8", "text": "It is the Lord who goes before you. He will be with you; he will not leave you or forsake you. Do not fear or be dismayed." },
+        { "name": "Ashamed", "reference": "Romans 8:1", "text": "There is therefore now no condemnation for those who are in Christ Jesus." },
+        { "name": "Guilty", "reference": "1 John 1:9", "text": "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness." },
+        { "name": "Bored", "reference": "1 Corinthians 10:31", "text": "So, whether you eat or drink, or whatever you do, do all to the glory of God." },
+        { "name": "Tired", "reference": "Isaiah 40:29", "text": "He gives power to the faint, and to him who has no might he increases strength." }
       ]
     },
     {
       "core": "AFRAID",
-      "color": "bg-purple-500",
+      "color": "bg-orange-500",
       "feelings": [
-        { "name": "Anxious", "reference": "Philippians 4:6-7", "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus." },
-        { "name": "Confused", "reference": "1 Corinthians 14:33", "text": "For God is not a God of confusion but of peace." },
-        { "name": "Insecure", "reference": "Philippians 4:8", "text": "Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things." },
-        { "name": "Helpless", "reference": "Romans 8:26-27", "text": "Likewise the Spirit helps us in our weakness. For we do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words." },
-        { "name": "Rejected", "reference": "John 15:18", "text": "If the world hates you, know that it has hated me before it hated you." },
-        { "name": "Meek", "reference": "Matthew 5:5", "text": "Blessed are the meek, for they shall inherit the earth." }
+        { "name": "Anxious", "reference": "1 Peter 5:7", "text": "Casting all your anxieties on him, because he cares for you." },
+        { "name": "Confused", "reference": "James 1:5", "text": "If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him." },
+        { "name": "Insecure", "reference": "Psalm 139:14", "text": "I praise you, for I am fearfully and wonderfully made. Wonderful are your works; my soul knows it very well." },
+        { "name": "Helpless", "reference": "Psalm 46:1", "text": "God is our refuge and strength, a very present help in trouble." },
+        { "name": "Rejected", "reference": "Psalm 27:10", "text": "For my father and my mother have forsaken me, but the Lord will take me in." },
+        { "name": "Meek", "reference": "Colossians 3:12", "text": "Put on then, as God's chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience." }
       ]
     }
   ]

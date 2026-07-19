@@ -45,7 +45,7 @@ export default defineConfig({
       }
     })
   ],
-  base: '/word-when/', 
+  base: '/', 
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
