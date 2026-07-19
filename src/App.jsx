@@ -91,7 +91,7 @@ export default function EmotionApp() {
                   <button
                     key={feeling.name}
                     onClick={() => setSelectedFeeling(feeling)}
-                    className={`${selectedCore.color} text-white tracking-wide uppercase border-2 border-transparent hover:border-slate-200 py-4 rounded-lg font-semibold shadow-sm hover:opacity-90 transition-all`}
+                    className={`${selectedCore.color} text-white py-8 rounded-xl font-bold text-xl shadow-sm hover:opacity-90 transition-opacity uppercase`}
                   >
                     {feeling.name}
                   </button>
@@ -123,7 +123,7 @@ export default function EmotionApp() {
                 </span>{" "}
                 because I am{" "}
                 <span
-                  className={`font-bold ${selectedCore.color.replace(
+                  className={`font-bold uppercase ${selectedCore.color.replace(
                     "bg-",
                     "text-"
                   )}`}

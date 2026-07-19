@@ -4,12 +4,27 @@ export default function About({ onBack }) {
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden mt-10">
         {/* Header */}
         <div className="bg-slate-800 p-6 text-center text-white relative">
-          <button
-            onClick={onBack}
-            className="absolute left-4 top-6 text-sm underline opacity-80 hover:opacity-100 transition-opacity"
-          >
-            &#8592; Back
-          </button>
+         <button 
+  onClick={onBack}
+  className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-slate-300 transition-colors flex items-center gap-1.5 font-medium p-2"
+  aria-label="Go back"
+>
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    fill="none" 
+    viewBox="0 0 24 24" 
+    strokeWidth={2.5} 
+    stroke="currentColor" 
+    className="w-5 h-5"
+  >
+    <path 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" 
+    />
+  </svg>
+ 
+</button>
           <h1 className="text-2xl font-bold tracking-wide">About Word When</h1>
         </div>
 

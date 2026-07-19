@@ -18,9 +18,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'Word When',
-        short_name: 'Word When',
-        description: 'A tool to map feelings to scripture.',
+        name: 'WordWhen',
+        short_name: 'WordWhen',
+        description: 'Scripture for Every Emotion.',
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',
@@ -41,10 +41,11 @@ export default defineConfig({
             type: 'image/png',
             purpose: 'any maskable'
           }
-        ]
+        ],
       }
     })
   ],
+  
   base: '/', 
   resolve: {
     alias: {
