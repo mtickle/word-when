@@ -71,6 +71,55 @@
         { "name": "Rejected", "reference": "Psalm 27:10", "text": "For my father and my mother have forsaken me, but the Lord will take me in." },
         { "name": "Meek", "reference": "Colossians 3:12", "text": "Put on then, as God's chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience." }
       ]
+    },
+      {
+
+      "core": "SURPRISED",
+
+      "color": "bg-cyan-500",
+
+      "feelings": [
+
+        { "name": "Amazed", "reference": "Psalm 77:14", "text": "You are the God who works wonders; you have made known your might among the peoples." },
+
+        { "name": "Startled", "reference": "Proverbs 3:24", "text": "If you lie down, you will not be afraid; when you lie down, your sleep will be sweet." },
+
+        { "name": "Awestruck", "reference": "Psalm 33:8", "text": "Let all the earth fear the LORD; let all the inhabitants of the world stand in awe of him!" },
+
+        { "name": "Confused", "reference": "Proverbs 3:5", "text": "Trust in the LORD with all your heart, and do not lean on your own understanding." },
+
+        { "name": "Shocked", "reference": "Isaiah 55:8", "text": "For my thoughts are not your thoughts, neither are your ways my ways, declares the LORD." },
+
+        { "name": "Wonder", "reference": "Job 37:14", "text": "Hear this, O Job; stop and consider the wondrous works of God." }
+
+      ]
+
+    },
+
+    {
+
+      "core": "DISGUST",
+
+      "color": "bg-indigo-500",
+
+      "feelings": [
+
+        { "name": "Judgmental", "reference": "Matthew 7:1-2", "text": "Judge not, that you be not judged. For with the judgment you pronounce you will be judged, and with the measure you use it will be measured to you." },
+
+        { "name": "Disapproving", "reference": "Romans 12:9", "text": "Let love be genuine. Abhor what is evil; hold fast to what is good." },
+
+        { "name": "Bitter", "reference": "Ephesians 4:31-32", "text": "Let all bitterness and wrath and anger and clamor and slander be put away from you, along with all malice. Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you." },
+
+        { "name": "Avoidant", "reference": "Proverbs 4:14-15", "text": "Do not enter the path of the wicked, and do not walk in the way of the evil. Avoid it; do not go on it; turn away from it and pass on." },
+
+        { "name": "Awful", "reference": "Psalm 73:26", "text": "My flesh and my heart may fail, but God is the strength of my heart and my portion forever." },
+
+        { "name": "Hesitant", "reference": "James 1:5", "text": "If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him." }
+
+      ]
+
     }
+
   ]
+
 }

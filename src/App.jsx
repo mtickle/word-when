@@ -99,7 +99,7 @@ export default function EmotionApp() {
           )}
         </div>
         <p className="text-center text-white-500 text-sm mt-1 mb-3 ml-3 mr-3">
-          This app was built for Piper Tickle to help her navigate her emotions.{" "}
+          This app was built for Piper Tickle to help her navigate complex emotions with the help of scripture.{" "}
           <button
             onClick={() => setShowAbout(true)}
             className="text-sm underline opacity-80 hover:opacity-100 transition-opacity"
