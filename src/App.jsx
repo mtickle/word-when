@@ -19,31 +19,37 @@ export default function EmotionApp() {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center p-6 font-sans">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden mt-10">
-        {/* Header - Removed the top left reset button */}
+        {/* Header */}
         <div className="bg-slate-800 p-6 text-center text-white relative">
           <h1 className="text-2xl font-bold tracking-wide">Word When</h1>
         </div>
 
         <div className="p-6">
+          
           {/* View 1: Select Core Emotion */}
           {!selectedCore && (
-            <div className="grid grid-cols-2 gap-4">
-              {emotionData.emotions.map((emotion) => (
-                <button
-                  key={emotion.core}
-                  onClick={() => setSelectedCore(emotion)}
-                  className={`${emotion.color} text-white py-8 rounded-xl font-bold text-xl shadow-sm hover:opacity-90 transition-opacity uppercase`}
-                >
-                  {emotion.core}
-                </button>
-              ))}
+            <div className="animate-fade-in">
+              <h2 className="text-lg text-slate-600 mb-4 text-center">
+                I am feeling...
+              </h2>
+              <div className="grid grid-cols-2 gap-4">
+                {emotionData.emotions.map((emotion) => (
+                  <button
+                    key={emotion.core}
+                    onClick={() => setSelectedCore(emotion)}
+                    className={`${emotion.color} text-white py-8 rounded-xl font-bold text-xl shadow-sm hover:opacity-90 transition-opacity uppercase`}
+                  >
+                    {emotion.core}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 
           {/* View 2: Select Specific Feeling */}
           {selectedCore && !selectedFeeling && (
             <div className="animate-fade-in">
-              <h2 className="text-lg text-white-600 mb-4 text-center">
+              <h2 className="text-lg text-slate-600 mb-4 text-center">
                 I am feeling{" "}
                 <span
                   className={`font-bold ${selectedCore.color.replace(
@@ -66,7 +72,7 @@ export default function EmotionApp() {
                   </button>
                 ))}
 
-                {/* New Start Over Button: Spans 2 columns, muted colors */}
+                {/* Start Over Button */}
                 <button
                   onClick={reset}
                   className="col-span-2 mt-2 bg-slate-100 hover:bg-slate-200 text-slate-500 py-3 rounded-lg font-medium transition-colors"
@@ -79,14 +85,34 @@ export default function EmotionApp() {
 
           {/* View 3: The Verse */}
           {selectedFeeling && (
-            <div className="animate-fade-in text-center py-8">
+            <div className="animate-fade-in text-center py-0">
+              <h2 className="text-lg text-slate-600 mb-6 text-center">
+                I am feeling{" "}
+                <span
+                  className={`font-bold ${selectedCore.color.replace(
+                    "bg-",
+                    "text-"
+                  )}`}
+                >
+                  {selectedCore.core}
+                </span>{" "}
+                because I am{" "}
+                <span
+                  className={`font-bold ${selectedCore.color.replace(
+                    "bg-",
+                    "text-"
+                  )}`}
+                >
+                  {selectedFeeling.name}
+                </span>
+              </h2>
               <div className="mb-6 inline-block p-4 rounded-full bg-slate-100">
                 <span className="text-3xl">📖</span>
               </div>
-              <h3 className="text-2xl font-bold text-white-800 mb-2">
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">
                 {selectedFeeling.reference}
               </h3>
-              <p className="text-white-600 italic mb-8 px-4 text-lg">
+              <p className="text-slate-600 italic mb-8 px-4 text-lg">
                 "{selectedFeeling.text}"
               </p>
               <button
@@ -98,15 +124,19 @@ export default function EmotionApp() {
             </div>
           )}
         </div>
-        <p className="text-center text-white-500 text-sm mt-1 mb-3 ml-3 mr-3">
-          This app was built for Piper Tickle to help her navigate complex emotions with the help of scripture.{" "}
-          <button
-            onClick={() => setShowAbout(true)}
-            className="text-sm underline opacity-80 hover:opacity-100 transition-opacity"
-          >
-            Read more.
-          </button>
-        </p>
+        
+        {/* Conditionally render the about blurb only on View 1 */}
+        {!selectedCore && (
+          <p className="text-center text-slate-500 text-sm mt-1 mb-3 ml-3 mr-3 animate-fade-in">
+            This app was built for Piper Tickle to help her navigate complex emotions with the help of scripture.{" "}
+            <button
+              onClick={() => setShowAbout(true)}
+              className="text-sm underline opacity-80 hover:opacity-100 transition-opacity"
+            >
+              Read more.
+            </button>
+          </p>
+        )}
       </div>
     </div>
   );
