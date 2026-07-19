@@ -1,11 +1,13 @@
 import emotionData from "@data/data.json";
 import { useState } from "react";
 import About from "./About";
+import Help from "./Help";
 
 export default function EmotionApp() {
   const [selectedCore, setSelectedCore] = useState(null);
   const [selectedFeeling, setSelectedFeeling] = useState(null);
   const [showAbout, setShowAbout] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
 
   const reset = () => {
     setSelectedCore(null);
@@ -16,16 +18,39 @@ export default function EmotionApp() {
     return <About onBack={() => setShowAbout(false)} />;
   }
 
+  if (showHelp) {
+    return <Help onBack={() => setShowHelp(false)} />;
+  }
+
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center p-6 font-sans">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden mt-10">
-        {/* Header */}
+        {/* Header with new Help Icon */}
         <div className="bg-slate-800 p-6 text-center text-white relative">
           <h1 className="text-2xl font-bold tracking-wide">Word When</h1>
+          <button
+            onClick={() => setShowHelp(true)}
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-slate-300 transition-colors p-2"
+            aria-label="Help and Installation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </button>
         </div>
 
         <div className="p-6">
-          
           {/* View 1: Select Core Emotion */}
           {!selectedCore && (
             <div className="animate-fade-in">
@@ -124,11 +149,12 @@ export default function EmotionApp() {
             </div>
           )}
         </div>
-        
+
         {/* Conditionally render the about blurb only on View 1 */}
         {!selectedCore && (
           <p className="text-center text-slate-500 text-sm mt-1 mb-3 ml-3 mr-3 animate-fade-in">
-            This app was built for Piper Tickle to help her navigate complex emotions with the help of scripture.{" "}
+            This app was built for Piper Tickle to help her navigate complex
+            emotions with the help of scripture.{" "}
             <button
               onClick={() => setShowAbout(true)}
               className="text-sm underline opacity-80 hover:opacity-100 transition-opacity"

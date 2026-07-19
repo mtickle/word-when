@@ -8,17 +8,13 @@ export default function About({ onBack }) {
             onClick={onBack}
             className="absolute left-4 top-6 text-sm underline opacity-80 hover:opacity-100 transition-opacity"
           >
-            Back
+            &#8592; Back
           </button>
           <h1 className="text-2xl font-bold tracking-wide">About Word When</h1>
         </div>
 
         {/* Content */}
         <div className="p-8 text-slate-700 space-y-6 leading-relaxed">
-          <p>
-            For help, or more information about this app, please reach out to <a href="mailto:mtickle@gmail.com">Mike Tickle</a>
-            </p>          
-
           <p>
             The way this app helps you map out your emotions actually has
             hundreds of years of research behind it.
