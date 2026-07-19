@@ -30,6 +30,8 @@ export default function About({ onBack }) {
 
         {/* Content */}
         <div className="p-8 text-slate-700 space-y-6 leading-relaxed">
+
+
           <p>
             The way this app helps you map out your emotions actually has
             hundreds of years of research behind it.

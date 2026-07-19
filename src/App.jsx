@@ -152,8 +152,8 @@ export default function EmotionApp() {
 
         {/* Conditionally render the about blurb only on View 1 */}
         {!selectedCore && (
-          <p className="text-center text-slate-500 text-sm mt-1 mb-3 ml-3 mr-3 animate-fade-in">
-            This app was built for Piper Tickle to help her navigate complex
+          <p className="text-center text-slate-500 text-sm mt-1 mb-3 ml-3 mr-3 animate-fade-in">            
+            It was built for Piper Tickle to help her navigate complex
             emotions with the help of scripture.{" "}
             <button
               onClick={() => setShowAbout(true)}

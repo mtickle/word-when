@@ -59,13 +59,16 @@ export default function Help({ onBack }) {
         <div className="p-6 h-[70vh] overflow-y-auto">
           {/* PWA Installation Section */}
           <section className="mb-8">
+            <p className="text-sm text-slate-600 mb-4">  Privacy first. This app is completely ad-free and does not collect, store, or sell your personal data.</p>
+          
+
             <h2 className="text-xl font-bold text-slate-800 mb-4 border-b pb-2">
               How to Install
             </h2>
 
             <div className="mb-6 bg-slate-50 p-4 rounded-xl border border-slate-100">
               <h3 className="font-bold text-slate-700 mb-2 flex items-center gap-2">
-                🍎 Apple iOS (iPhone/iPad)
+                iOS (iPhone/iPad)
               </h3>
               <ol className="list-decimal pl-5 text-slate-600 text-sm space-y-2 mb-2">
                 <li>
@@ -91,7 +94,7 @@ export default function Help({ onBack }) {
 
             <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
               <h3 className="font-bold text-slate-700 mb-2 flex items-center gap-2">
-                🤖 Android
+                Android
               </h3>
               <ol className="list-decimal pl-5 text-slate-600 text-sm space-y-2">
                 <li>
@@ -103,8 +106,7 @@ export default function Help({ onBack }) {
                   right).
                 </li>
                 <li>
-                  Tap <strong>Install app</strong> or{" "}
-                  <strong>Add to Home screen</strong>.
+                  Tap <strong>Install and create shortcut</strong>.
                 </li>
                 <li>Follow the on-screen prompt to confirm.</li>
               </ol>
@@ -121,16 +123,16 @@ export default function Help({ onBack }) {
               directly.
             </p>
 
-  {status === "SUCCESS" && (
-                <p className="text-green-600 text-sm text-center font-medium mt-2">
-                  Message sent successfully!
-                </p>
-              )}
-              {status === "ERROR" && (
-                <p className="text-red-600 text-sm text-center font-medium mt-2">
-                  Oops! There was a problem sending your message.
-                </p>
-              )}
+            {status === "SUCCESS" && (
+              <p className="text-green-600 text-sm text-center font-medium mt-2">
+                Message sent successfully!
+              </p>
+            )}
+            {status === "ERROR" && (
+              <p className="text-red-600 text-sm text-center font-medium mt-2">
+                Oops! There was a problem sending your message.
+              </p>
+            )}
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -172,7 +174,7 @@ export default function Help({ onBack }) {
                 Send Message
               </button>
 
-            
+
             </form>
           </section>
         </div>
