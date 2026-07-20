@@ -25,6 +25,7 @@ export default function EmotionApp() {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center p-6 font-sans">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden mt-10">
+        
         {/* Header with new Help Icon */}
         <div className="bg-slate-800 p-6 text-center text-white relative">
           <h1 className="text-2xl font-bold tracking-wide">Word When</h1>
@@ -70,6 +71,7 @@ export default function EmotionApp() {
               </div>
             </div>
           )}
+
 
           {/* View 2: Select Specific Feeling */}
           {selectedCore && !selectedFeeling && (

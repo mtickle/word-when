@@ -60,7 +60,7 @@ export default function Help({ onBack }) {
           {/* PWA Installation Section */}
           <section className="mb-8">
             <p className="text-sm text-slate-600 mb-4">  Privacy first. This app is completely ad-free and does not collect, store, or sell your personal data.</p>
-          
+
 
             <h2 className="text-xl font-bold text-slate-800 mb-4 border-b pb-2">
               How to Install
